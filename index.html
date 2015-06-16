@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LazyLoad</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<h1>LazyLoad</h1>
+<p style="text-align:center;margin: 20px 0;">
+	<button id="btnFilter1">Filter 1</button>
+	<button id="btnFilter2">Filter 2</button>
+	<button id="btnAddItems">Add items</button>
+</p>
+<div id="photos">
+	<div class="item w2 cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/1" height="200" width="470"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/2" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/3" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/2" height="200" width="470"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/4" height="200" width="230"></figure></div>
+	<div class="item h2 w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/410/5" height="410" width="470"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/7" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/7" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/7" height="200" width="470"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/1" height="200" width="470"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/2" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/3" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/2" height="200" width="470"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/4" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/7" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/7" height="200" width="470"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/1" height="200" width="470"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/2" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/3" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/2" height="200" width="470"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/4" height="200" width="230"></figure></div>
+	<div class="item h2 w2"><iframe width="470" height="410" frameborder="0" data-lazy-src="https://www.youtube.com/embed/0bOFdWoRqYc" allowfullscreen></iframe></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/7" height="200" width="470"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/7" height="200" width="230"></figure></div>
+	<div class="item cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/7" height="200" width="230"></figure></div>
+	<div class="item w2 cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/1" height="200" width="470"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/2" height="200" width="230"></figure></div>
+	<div class="item cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/3" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/2" height="200" width="470"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/4" height="200" width="230"></figure></div>
+	<div class="item cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/7" height="200" width="230"></figure></div>
+	<div class="item w2 cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/7" height="200" width="470"></figure></div>
+	<div class="item w2 cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/1" height="200" width="470"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/2" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/3" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/2" height="200" width="470"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/4" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/7" height="200" width="230"></figure></div>
+	<div class="item w2 cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/7" height="200" width="470"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/1" height="200" width="470"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/2" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/3" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/2" height="200" width="470"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/4" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/7" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/7" height="200" width="470"></figure></div>
+	<div class="item h2 w2 cat2"><iframe width="470" height="410" frameborder="0" data-lazy-src="https://www.google.com/maps/embed/v1/place?q=11%20Rue%20de%20l'Annonciade%2C%20Lyon%2C%20France&amp;zoom=14&amp;key=AIzaSyC-Ip__4Mq6NKqhtB0Xvua6a8dG0illUUY"></iframe></div>
+	<div class="item h2 w2 cat2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/410/2" height="410" width="470"></figure></div>
+	<div class="item cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/3" height="200" width="230"></figure></div>
+	<div class="item w2"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/2" height="200" width="470"></figure></div>
+	<div class="item cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/4" height="200" width="230"></figure></div>
+	<div class="item"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/230/200/5" height="200" width="230"></figure></div>
+	<div class="item w2 cat1"><figure><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://lorempicsum.com/futurama/470/200/7" height="200" width="470"></figure></div>
+</div>
+
+<p style="text-align:center;margin: 20px 0;"><button id="btnAddItems2">Add items</button></p>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/lazyload.js"></script>
+</body>
+</html>
